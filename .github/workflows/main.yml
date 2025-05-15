@@ -21,6 +21,16 @@ jobs:
     - name: Install kaggle
       run: pip install kaggle
 
+    - name: Validate environment variables
+      run: |
+        if [[ -z "$KAGGLE_USERNAME" || -z "$KAGGLE_KEY" ]]; then
+          echo "KAGGLE_USERNAME or KAGGLE_KEY is not set"
+          exit 1
+        fi
+      env:
+        KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
+        KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
+
     - name: Download Kaggle notebook
       env:
         KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
