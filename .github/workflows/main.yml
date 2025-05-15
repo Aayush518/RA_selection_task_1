@@ -35,7 +35,7 @@ jobs:
       env:
         KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
         KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-      run: kaggle kernels pull $KAGGLE_USERNAME/RA_selection_task_1 -p .
+      run: kaggle kernels pull aayushadhikari112/RA_selection_task_1 -p .
 
 
     - name: Commit and push changes
