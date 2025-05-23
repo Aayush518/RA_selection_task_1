@@ -5,6 +5,17 @@
 
 [![Open in Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://www.kaggle.com/code/aayushadhikari112/ra-selection-task-1)
 
+## Submission Structure
+
+All output files are inside the submission folder in the outputs directory of the Kaggle notebook link above:
+
+- **Task1.1_BoneSegmentation**: Segmentation masks and previews
+- **Task1.2_ContourExpansion**: Expanded masks (2mm, 4mm)  
+- **Task1.3_RandomizedContour**: Randomized masks between original and expansion
+- **Task1.4_LandmarkDetection**: All tibia masks and landmark coordinates
+
+Each subfolder contains the files needed for reproducibility and evaluation.
+
 ---
 
 ## Project Overview
